@@ -1,0 +1,21 @@
+{
+    "name": "webguosai/flysystem-qiniu",
+    "description": "Flysystem adapter for the Qiniu storage.",
+    "license": "MIT",
+    "require": {
+        "php": ">=8.1",
+        "ext-curl": "*",
+        "league/flysystem": "^3.29",
+        "qiniu/php-sdk": "^7.13",
+        "hyperf/filesystem": "^3.1",
+        "overtrue/flysystem-qiniu": "^3.2"
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^5.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Webguosai\\Flysystem\\Qiniu\\": "src/"
+        }
+    }
+}
