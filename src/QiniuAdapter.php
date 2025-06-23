@@ -24,7 +24,7 @@ class QiniuAdapter extends \Overtrue\Flysystem\Qiniu\QiniuAdapter
          * @var Error|null $error
          */
         [, $error] = $this->getUploadManager()->put(
-            $this->getAuthManager()->uploadToken($this->bucket),
+            $this->getAuthManager()->uploadToken($this->bucket, key: $path, policy: ['insertOnly' => 0]),
             $path,
             $contents,
             null,
